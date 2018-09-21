@@ -645,7 +645,7 @@ public class FicheroCobol {
             w.println("            COPY \"" + NOMBRE + "-SEL\".");
             w.println("");
             w.println("            SELECT FOLD");
-            w.println("                   ASSIGN TO RANDOM NOMBREOLD");
+            w.println("                   ASSIGN TO NOMBREOLD");
             w.println("                   ORGANIZATION IS LINE SEQUENTIAL");
             w.println("                   ACCESS MODE IS SEQUENTIAL");
             w.println("                   FILE STATUS IS ERRORES.");

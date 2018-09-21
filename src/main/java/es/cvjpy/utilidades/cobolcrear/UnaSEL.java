@@ -66,10 +66,10 @@ public class UnaSEL {
                     re = datos.sigpal();
                     if (datos.getAntpal().equalsIgnoreCase("TO")) {
                         nombrenombre = re;
-                        re = datos.sigpal();
-                        if (datos.getAntpal().equalsIgnoreCase("RANDOM")) {
-                            nombrenombre = re;
-                        }
+                        //re = datos.sigpal();
+                        //if (datos.getAntpal().equalsIgnoreCase("RANDOM")) {
+                        //    nombrenombre = re;
+                        //}
                     }
                 }
                 if (datos.getAntpal().equalsIgnoreCase("ALTERNATE")) {
