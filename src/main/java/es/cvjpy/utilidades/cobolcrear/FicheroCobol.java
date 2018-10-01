@@ -578,6 +578,9 @@ public class FicheroCobol {
             w.println("        IDENTIFICATION DIVISION.");
             w.println("        PROGRAM-ID.    " + AOMBRE + ".");
             w.println("        SECURITY.      ASIGNADOR.");
+            w.println("");
+            w.println("        ENVIRONMENT DIVISION.");
+            w.println("");            
             w.println("        INPUT-OUTPUT SECTION.");
             w.println("        FILE-CONTROL.");
             w.println("            COPY \"" + NOMBRE + "-SEL\".");
@@ -795,6 +798,8 @@ public class FicheroCobol {
             w.println("       PROGRAM-ID.    " + SOMBRE + ".");
             w.println("       AUTHOR.        El hacedor de SERVIDORES.");
             w.println("       SECURITY.      SERVIDOR DE " + getLaFD().getNombre() + ".");
+            w.println("");
+            w.println("        ENVIRONMENT DIVISION.");
             w.println("");
             w.println("       INPUT-OUTPUT SECTION.");
             w.println("       FILE-CONTROL.");
@@ -1651,7 +1656,7 @@ public class FicheroCobol {
             w.println("           PERFORM VARYING II FROM 1 BY 1 UNTIL II > 256");
             w.println("                   IF BUF-1(II) = \"/\" OR \"\\\"");
             w.println(
-                    "                      CALL \"CBL_CREATE_DIR\" USING DIRECTORIO ESTADO");
+                    "                      CALL \"CBL_CREATE_DIR\" USING DIRECTORIO");
             w.println("                   END-IF");
             w.println("                   MOVE BUF-1(II) TO DIR-1(II)");
             w.println("                   IF DIR-1(II) = \" \"");
